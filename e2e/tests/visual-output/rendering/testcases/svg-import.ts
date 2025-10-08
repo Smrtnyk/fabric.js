@@ -13,6 +13,7 @@ const createTestFromSVG = (svgName: string): renderTestType => {
   return {
     title: `Svg import test ${svgName}`,
     golden: `${svgName}.png`,
+    only: true,
     percentage: 0.055,
     snapshotSuffix: 'svg-import',
     size: [100, 100],
@@ -102,6 +103,11 @@ const svgFiles = [
   'svg_text_underline_thick',
   'svg_text_underline_color',
   'coords-viewattr-02-b',
+  // Nested clipPath tests for infinite recursion fix (https://github.com/fabricjs/fabric.js/issues/10659)
+  'nested-clippath-simple',
+  'nested-clippath-triple',
+  'nested-clippath-different',
+  'nested-clippath-complex',
 ];
 
 export const svgImportTests: renderTestType[] = svgFiles.map(createTestFromSVG);
