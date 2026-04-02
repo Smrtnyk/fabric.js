@@ -2,6 +2,7 @@
 
 ## [next]
 
+- Vitest snapshot [#10937](https://github.com/fabricjs/fabric.js/pull/10937)
 - refactor(test): fix dead assertions in Shadow.spec.ts [#10932](https://github.com/fabricjs/fabric.js/pull/10932)
 - chore(): update typescript to 6 [#10935](https://github.com/fabricjs/fabric.js/pull/10935)
 - chore(deps): update devDependencies to latest versions [#10929](https://github.com/fabricjs/fabric.js/pull/10929)
